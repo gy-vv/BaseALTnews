@@ -55,8 +55,7 @@ $("#mainPage").live("pageinit", function() {
 //Listen for the content page to load
 $("#contentPage").live("pageshow", function(prepage) {
 	//set vibration
-	try { navigator.vibrate(200) }
-	cath {//nothing to vibrate by}	
+navigator.vibrate(200);
 	//Set the title
 	$("h1", this).text(entries[selectedEntry].title);
 	var contentHTML = "";

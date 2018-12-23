@@ -8,7 +8,7 @@ $.ajaxSetup({
 
 //EDIT THESE LINES
 //Title of the blog
-var TITLE = "BaseALT News";
+var TITLE = "ShowBIZ News";
 //RSS url
 //
 var RSS = "https://news.yandex.ru/showbusiness.rss";
@@ -54,6 +54,9 @@ $("#mainPage").live("pageinit", function() {
 
 //Listen for the content page to load
 $("#contentPage").live("pageshow", function(prepage) {
+	//set vibration
+	try{navigator.notification.vibrate(200)}
+	cath{//nothing to vibrate by}	
 	//Set the title
 	$("h1", this).text(entries[selectedEntry].title);
 	var contentHTML = "";
